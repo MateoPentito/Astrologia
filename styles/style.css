@@ -1,0 +1,214 @@
+* {
+    font-family: "Libre Baskerville", serif;
+
+
+}
+
+body {
+    margin: auto;
+    text-align: center;
+
+}
+
+.nav-container {
+    display: flex;
+    background-color: rgba(44, 5, 49, .9);
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px white;
+
+}
+
+.nav-container_div {
+    text-align: center;
+    margin: auto;
+}
+
+.nav-container_img {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-container_ol {
+    align-items: center;
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+    /* quita los números */
+    padding-left: 0;
+    /* quita el espacio a la izquierda */
+    text-align: center;
+    /* alinea el contenido de los <li> a la derecha */
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-container-ol_li {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-container-li_a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container-li_a:hover{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+    transition: .8s;
+
+}
+
+
+.section-container_index {
+    background-image: url("../styles/images/inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* 100% ancho y 100% alto */
+    background-position: center;
+    margin: auto;
+    padding: 400px;
+    color: white;
+}
+
+.section-container_sobreMi {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 5px 15px black;
+    background-image: url(../styles/images/lunaysol.jpg);
+}
+
+
+.container-sobreMi_div {
+    display: flex;
+    padding: 50px;
+}
+
+.container-sobreMi-div_div1 {
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 5px 15px white;
+    border: 15px solid black;
+}
+
+.container-sobreMi-div_div2{
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 5px 15px white;
+    border: 15px solid black;
+}
+
+.container-sobreMi-div_img {
+    height: 400px;
+    width: 200px;
+    box-shadow: 0 5px 15px black;
+}
+
+.container_servicios_div {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    background-color: rgba(44, 5, 49, .9);
+    box-shadow: 0 5px 55px black;
+    border-radius: 5px;
+    gap: 50px;
+}
+
+.section-container_div {
+    text-align: center;
+    gap: 150px;
+    color: white;
+}
+
+.section-container-div_img {
+    height: 280px;
+    width: 280px;
+    padding: 5px;
+    box-shadow: 0 5px 50px white;
+    border-radius: 10px;
+}
+
+.section-container-div_img:hover {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 5px 50px yellow;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+
+
+.contacto_div{
+    background-image: url(../styles/images/luna.jpg);
+    margin: auto;
+    text-align: center;
+    padding: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contacto_form{
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px white;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+
+
+.footer {
+    background-color: rgba(44, 5, 49, .7);
+}
+
+.footer_ol {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.footer-ol_li{
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    gap: 50px;
+}
+.footer-li_img{
+    height: 50px;
+    width: 50pz;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+
+}
