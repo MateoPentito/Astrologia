@@ -391,7 +391,7 @@ h2{
 .container-CartaAstral3_ol{
     color: black;
     list-style-type: disc;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -434,6 +434,8 @@ h2{
     padding: 10px;
     width: 50%;
     background-color: white;
+    border: 5px solid black;
+    box-shadow: 0 3px 15px black;
 }
 
 
@@ -492,7 +494,52 @@ h2{
     padding: 30px;
 }
 
+/*Revolucion*/
 
+.section-container-revolucion1{
+    text-align: center;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+
+}
+
+.revolucion1_div{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    padding: 50px;
+}
+
+.revolucion1_img{
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+        padding: 10px;
+
+}
+
+.section-container-revolucion2{
+    background-image: url(../styles/images/revoluciones.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+.revolucion2_div{
+    text-align:center;
+    margin: auto;
+    background-color: white;
+    color: black;
+     width: 50%;
+    border: 5px solid black;
+    box-shadow: 0 15px 35px black;
+    padding: 30px;
+}
 
 
 
