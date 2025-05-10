@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/script.js" defer></script>
     <title>Home</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,40 +19,28 @@
     <header>
 
         <nav class="nav-container">
-
-            <div class="nav-container_div">
-                <ol class="nav-container_ol">
-
-                    <li class="nav-container-ol_li"><img src="../styles/iconos/logoWhatsapp.png" alt="whatsApp"
-                        class="footer-li_img">+54 1164638673</li>
-                <li class="nav-container-ol_li"><img src="../styles/iconos/logoEmail.png" alt="email"
-                        class="footer-li_img">clauisopi@hotmail.com</li>
-                <li class="nav-container-ol_li"><img src="../styles/iconos/logoInstagram.png" alt="instagram"
-                        class="footer-li_img">@clauIsopi</li>
-                </ol>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../styles/iconos/iconoAstrologia.png" alt="iconoAstrologia"
+                        class="nav-logo_img"></a>
             </div>
 
-            <div class="nav-container_div">
-                <a href="index.html"><img src="../styles/iconos/iconoAstrologia.png" alt="iconoAstrologia" class="nav-container_img"></a> 
+            <ul class="nav-menu">
+                <li><a href="#index">Inicio</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span>☰</span>
             </div>
 
-            <div class="nav-container_div">
-                <ol class="nav-container_ol">
-                    <li class="nav-container-ol_li"><a href="#index" class="nav-container-li_a">Inicio</a></li>
-                    <li class="nav-container-ol_li"><a href="#servicio" class="nav-container-li_a">Servicio</a>
-                    </li>
-                    <li class="nav-container-ol_li"><a href="#sobreMi" class="nav-container-li_a">Sobre mi</a></li>
-                    <li class="nav-container-ol_li"><a href="#contacto" class="nav-container-li_a">Contacto</a>
-                    </li>
-                </ol>
-            </div>
         </nav>
     </header>
 
     <main>
 
         <section class="section-container_index" id="index">
-            <h2>Astrologia</h2>
 
             <div class="section-index_div">
                 <h1>Explora tus registros acerca de astrologia</h1>
@@ -66,26 +53,29 @@
 
 
         <section class="section-container_servicios" id="servicio">
+
+
             <h2>Mis servicios</h2>
-
-
-
             <div class="container_servicios_div">
 
                 <div class="section-container_div">
-                <a href="CartaAstral.html"><img src="../styles/images/astrologia2.jpg" alt="astrologia" class="section-container-div_img"></a>    
+                    <a href="CartaAstral.html"><img src="../styles/images/astrologia2.jpg" alt="astrologia"
+                            class="section-container-div_img"></a>
                     <h2>Cartas Astrales</h2>
                     <p>Realizamos las cartas astrales con suma dedicacion</p>
                 </div>
 
                 <div class="section-container_div">
-                    <img src="../styles/images/astrologia3.jpg" alt="astrologia" class="section-container-div_img">
+                    <a href="/html/tarot.html"><img src="../styles/images/astrologia3.jpg" alt="astrologia"
+                            class="section-container-div_img"></a>
                     <h2>Tarot</h2>
                     <p>Realizamos la tirada de cartas Online o presencial. Te lo vas a perder?</p>
                 </div>
 
                 <div class="section-container_div">
-                    <img src="../styles/images/astrologia4.jpg" alt="astrologia" class="section-container-div_img">
+                    <a href="../html/revolucion.html"><img src="../styles/images/astrologia4.jpg" alt="astrologia"
+                            class="section-container-div_img"></a>
+
                     <h2>Revoluciones</h2>
                     <p>Realizamos las revoluciones con suma dedicacion!!</p>
                 </div>
@@ -103,7 +93,7 @@
 
                 <div class="container-sobreMi-div_div1">
                     <h2>Claudia Isopi</h2>
-                    <img src="../styles/images/astrologia1.jpg" alt="" class="container-sobreMi-div_img">
+                    <img src="../styles/images/claudia.jpg" alt="" class="container-sobreMi-div_img">
                     <p>Te brindo el servicio con la mejor atencion.</p>
                 </div>
 
@@ -125,29 +115,35 @@
             <h2>Contacto</h2>
 
             <div class="contacto_div">
-                <form class="contacto_form">
-                    <div>
-                        <label for="">Nombre: </label>
-                        <input type="text" name="nombre" id="nombre">
+                <form action="https://formsubmit.co/1195dedfe611c17760ec8a63af0c542e" method="POST"
+                    class="contacto_form">
+
+
+                    <div class="contacto-form_div">
+                        <label for="" class="contacto-form_label">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" class="contacto-form_input">
                     </div>
-                    <div>
-                        <label for="">Apellido: </label>
-                        <input type="text" name="nombre" id="nombre">
+                    <div class="contacto-form_div">
+                        <label for="" class="contacto-form_label">Apellido: </label>
+                        <input type="text" name="Apellido" id="apellido" class="contacto-form_input">
                     </div>
-                    <div>
-                        <label for="">mail: </label>
-                        <input type="email" name="nombre" id="nombre">
+                    <div class="contacto-form_div">
+                        <label for="" class="contacto-form_label">Correo electronico: </label>
+                        <input type="email" name="email" id="email" class="contacto-form_input">
                     </div>
-                    <div>
-                        <label for="">Modalidad = Presencial / Virtual: </label>
-                        <input type="text" name="nombre" id="nombre">
+                    <div class="contacto-form_div">
+                        <label for="" class="contacto-form_label">Modalidad: Presencial / Virtual </label>
+                        <input type="text" name="modalidad" id="modalidad" class="contacto-form_input">
                     </div>
-                    <div>
-                        <label for="">Mensaje: </label>
-                        <input type="text" name="nombre" id="nombre">
+                    <div class="contacto-form_div">
+                        <label for="" class="contacto-form_label">Mensaje: </label>
+                        <input type="text" name="mensaje" id="mensaje" class="contacto-form_input">
                     </div>
-                    <div>
-                        <button>Enviar</button>
+                    <div class="contacto-form_div">
+                        <button type="submit" class="contacto-form_button">Enviar</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/index.html">
+                        <input type="hidden" name="_captcha" value="false">
+
                     </div>
                 </form>
             </div>
@@ -157,12 +153,14 @@
 
     <footer class="footer">
         <ol class="footer_ol">
-            <li class="footer-ol_li"><img src="../styles/iconos/logoWhatsapp.png" alt="whatsApp"
-                    class="footer-li_img">+54 1164638673</li>
-            <li class="footer-ol_li"><img src="../styles/iconos/logoEmail.png" alt="email"
-                    class="footer-li_img">clauisopi@hotmail.com</li>
-            <li class="footer-ol_li"><img src="../styles/iconos/logoInstagram.png" alt="instagram"
-                    class="footer-li_img">@clauIsopi</li>
+            <img src="../styles/iconos/logoWhatsapp.png" alt="whatsApp" class="footer-li_img">
+            <li class="footer-ol_li">+541164638673</li>
+
+
+            <img src="../styles/iconos/correo.png" alt="email" class="footer-li_img">
+            <li class="footer-ol_li">clauisopi@hotmail.com</li>
+            <img src="../styles/iconos/logoInstagram.png" alt="instagram" class="footer-li_img">
+            <li class="footer-ol_li">@clauIsopi</li>
         </ol>
     </footer>
 

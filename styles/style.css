@@ -1,83 +1,130 @@
 * {
-    font-family: "Libre Baskerville", serif;
 
+    font-family: "Quicksand", sans-serif;
 
 }
 
 body {
     margin: auto;
     text-align: center;
+}
 
+header {
+    background-color: rgb(52, 3, 53);
+    padding: 10px;
 }
 
 .nav-container {
     display: flex;
-    background-color: rgba(44, 5, 49, .9);
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 5px 20px white;
-
-}
-
-.nav-container_div {
-    text-align: center;
-    margin: auto;
-}
-
-.nav-container_img {
-    width: 50px;
-    height: 50px;
-    max-width: 100%;
-    height: auto;
-}
-
-.nav-container_ol {
+    justify-content: space-between;
     align-items: center;
+}
+
+
+.nav-container .nav-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-logo_img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+
+.nav-container .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 100px;
-    list-style-type: none;
-    /* quita los números */
-    padding-left: 0;
-    /* quita el espacio a la izquierda */
-    text-align: center;
-    /* alinea el contenido de los <li> a la derecha */
-    margin: auto;
-    justify-content: center;
 }
 
-.nav-container-ol_li {
+.nav-container .nav-menu li {
+    margin-right: 20px;
+    color: #fff;
+
+}
+
+.nav-container .nav-menu li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
+    font-size: 18px;
+}
+
+.nav-container .nav-menu li a:hover {
+    color: #f0f0f06c;
+}
+
+
+/*Menu responsive*/
+
+@media (max-width: 200px) {
+    .nav-container .nav-menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+    }
+
+    .nav-container .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-container.active .nav-menu {
+        display: block;
+    }
 
 }
 
-.nav-container-li_a {
-    text-decoration: none;
-    color: white;
+
+h2{
+    padding: 25px;
 }
 
-.nav-container-li_a:hover{
-    text-decoration: none;
-    color: yellow;
-    font-size: 20px;
-    transition: .8s;
 
-}
+/*SECTION*/
 
 
 .section-container_index {
-    background-image: url("../styles/images/inicio.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../styles/images/planetas.avif");
+    /* background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* 100% ancho y 100% alto */
+     100% ancho y 100% alto 
     background-position: center;
     margin: auto;
     padding: 400px;
+    color: white; */
+
+    /* background-image: url("../styles/images/mapamundi.avif"); Tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Ocupa toda la pantalla */
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-container_sobreMi {
+
+}
+
+
+.container-sobreMi_div {
+    display: flex;
+    padding: 50px;
     width: 100%;
     text-align: center;
     margin: auto;
@@ -86,22 +133,17 @@ body {
     background-image: url(../styles/images/lunaysol.jpg);
 }
 
-
-.container-sobreMi_div {
-    display: flex;
-    padding: 50px;
-}
-
 .container-sobreMi-div_div1 {
     text-align: center;
     margin: auto;
     background-color: white;
-    padding: 50px;
     box-shadow: 0 5px 15px white;
     border: 15px solid black;
+    width: 20%;
+    height: auto;
 }
 
-.container-sobreMi-div_div2{
+.container-sobreMi-div_div2 {
     text-align: center;
     margin: auto;
     background-color: white;
@@ -111,9 +153,14 @@ body {
 }
 
 .container-sobreMi-div_img {
-    height: 400px;
-    width: 200px;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
     box-shadow: 0 5px 15px black;
+    border-radius: 20px;
+    margin: auto;
 }
 
 .container_servicios_div {
@@ -122,7 +169,7 @@ body {
     margin: auto;
     padding: 50px;
     justify-content: center;
-    background-color: rgba(44, 5, 49, .9);
+    background-color: rgb(16, 0, 42);
     box-shadow: 0 5px 55px black;
     border-radius: 5px;
     gap: 50px;
@@ -135,42 +182,336 @@ body {
 }
 
 .section-container-div_img {
-    height: 280px;
-    width: 280px;
-    padding: 5px;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 60%;
+    background-color: white;
+    width: 100%;
+    height: auto;
     box-shadow: 0 5px 50px white;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .section-container-div_img:hover {
-    height: 300px;
-    width: 300px;
-    padding: 10px;
-    box-shadow: 0 5px 50px yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    box-shadow: 0 5px 50px rgb(226, 226, 0);
     border-radius: 10px;
-    transition: .4s;
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    transition: .2s;
 }
 
+/*Contactos*/
 
+.section-container_contacto{
+}
 
-.contacto_div{
-    background-image: url(../styles/images/luna.jpg);
+.contacto_div {
+    background-image: url(../styles/images/contactos.avif);
     margin: auto;
     text-align: center;
-    padding: 150px;
+    padding: 50px;
     width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    max-width: 100%;
+    background-size: cover;
+    /* Hace que el fondo cubra todo el espacio sin deformarse */
+    background-size: contain;
+    /* Muestra toda la imagen aunque no llene todo el fondo */
+    /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;
+    /* Evita que se repita si la imagen es chica */
+    /* Fija el fondo mientras se hace scroll (efecto parallax) */
+    background-color: #000;
+    /* Color de fondo de respaldo si la imagen no carga */
+
 }
 
-.contacto_form{
-    background-color: white;
+.contacto_form {
+    background-image: url(../styles/images/form.avif);
     width: 400px;
-    text-align: center;
+    text-align: right;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px white;
+    justify-content: right;
+    height: auto;
+    padding: 25px;
+    color: white;
+    background-color: #000;
+    /* Color de fondo de respaldo si la imagen no carga */
 }
+
+
+.contacto-form_div {
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.contacto-form_label {
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.contacto-form_input {
+    width: 100%;
+    text-decoration: none;
+    box-shadow: 0 5px 15px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contacto-form_button {
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 5px 15px black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contacto-form_button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-size: 20px;
+    box-shadow: 0 5px 15px white;
+
+}
+
+
+
+/*Carta astral*/
+
+.section-container_CartaAstral {
+    background-image: url(../styles/images/mapamundi.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.container-CartaAstral_div {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.container-CartaAstral-div_div {
+    font-size: 25px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.cartaAstral_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 5px 85px white;
+}
+
+
+/*Carta astral 2*/
+
+.section-container_CartaAstral2 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-CartaAstral2_div1 {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.cartaAstral1_img{
+    background-size: cover;
+    background-size: contain;
+    border-radius: 300px;
+    border: 10px solid white;
+    height: 250px;
+    margin: auto;
+    
+}
+
+/*Carta astral 3*/
+
+.section-container_CartaAstral3{
+    padding: 30px;
+    margin: auto;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-items: center;
+    
+
+
+}
+
+.container-CartaAstral3_div{
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+.container-CartaAstral3_ol{
+    color: black;
+    list-style-type: disc;
+    text-align: left;
+
+}
+
+
+/*Carta astral 4*/
+
+
+.section-container_CartaAstral4 {
+    text-align: center;
+    background-image: url(../styles/images/astral.avif);
+    color: white;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*Tarot*/
+
+.section-container_tarot{
+    background-image: url(../styles/images/tarot.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+
+.container-tarot_div{
+    color: black;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    background-color: white;
+}
+
+
+.section-container_tarot2{
+ text-align: center;
+ list-style-type: none;
+}
+
+.container_tarot2_ol{
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section-container_tarot3{
+    text-align: center;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.container-tarot3_div{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.container-tarot3-div_div{
+    display: inline;
+    margin:  auto;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.tarot3_img{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+.taro3_ol{
+    text-align: left;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -179,12 +520,9 @@ body {
 
 /*FOOTER*/
 
-
-
-
-
 .footer {
-    background-color: rgba(44, 5, 49, .7);
+    background-color: rgb(16, 0, 42);
+    color: white;
 }
 
 .footer_ol {
@@ -193,22 +531,32 @@ body {
     text-align: center;
     margin: auto;
     justify-content: center;
-
+    align-items: center;
 }
 
-.footer-ol_li{
-    margin:auto;
+.footer-ol_li {
+    margin: auto;
     text-align: center;
     justify-content: center;
-    padding: 30px;
     text-align: center;
-    gap: 50px;
+    padding: 10px;
+    
 }
-.footer-li_img{
+
+/* .footer-li_img {
     height: 50px;
     width: 50pz;
     margin: auto;
     text-align: center;
     justify-content: center;
+} */
+
+
+.footer-li_img{
+    width: 1%;
+    height: 1%;
+    max-width: 5%;
+    background-size: cover;
+    background-size: contain;
 
 }

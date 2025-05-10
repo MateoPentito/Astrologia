@@ -1,52 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta Astral</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
+
     <header>
 
         <nav class="nav-container">
-
-            <div class="nav-container_div">
-                <ol class="nav-container_ol">
-                    <li class="nav-container-ol_li">linkedin</li>
-                    <li class="nav-container-ol_li">Instagram</li>
-                    <li class="nav-container-ol_li">Facebook</li>
-                    <li class="nav-container-ol_li">whatsApp</li>
-                    <li class="nav-container-ol_li">Correo</li>
-                </ol>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../styles/iconos/iconoAstrologia.png" alt="iconoAstrologia"
+                        class="nav-logo_img"></a>
             </div>
 
-            <div class="nav-container_div">
-                <a href="index.html"><img src="../styles/iconos/iconoAstrologia.png" alt="iconoAstrologia" class="nav-container_img"></a> 
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span>☰</span>
             </div>
 
-            <div class="nav-container_div">
-                <ol class="nav-container_ol">
-                    <li class="nav-container-ol_li"><a href="index.html" class="nav-container-li_a">Inicio</a></li>
-                    <li class="nav-container-ol_li"><a href="#servicio" class="nav-container-li_a">Servicio</a>
-                    </li>
-                    <li class="nav-container-ol_li"><a href="#sobreMi" class="nav-container-li_a">Sobre mi</a></li>
-                    <li class="nav-container-ol_li"><a href="#contacto" class="nav-container-li_a">Contacto</a>
-                    </li>
-                </ol>
-            </div>
         </nav>
     </header>
 
 
+
     <main>
-        <section>
-            <h1>Cartas astrales</h1>
-            <img src="../styles/images/astrologia2.jpg" alt="cartaAstral">
+        <section class="section-container_CartaAstral">
+
+            <div class="container-CartaAstral_div">
+
+                <div class="container-CartaAstral-div_div">
+                    <h2>Que es una carta astral?</h2>
+                    <p>Una carta astral, también conocida como carta natal, es un mapa del cielo en el momento exacto en
+                        que
+                        una persona nace. Se basa en la fecha, hora y lugar de nacimiento, y muestra la posición de los
+                        planetas, el Sol y la Luna desde la perspectiva de la Tierra.</p>
+                </div>
+
+            </div>
+
         </section>
+
+
+        <section class="section-container_CartaAstral2">
+
+            <div class="container-CartaAstral2_div1">
+
+                <h2>¿Para qué sirve una carta astral?</h2>
+                <h3>Se utiliza en astrología para:</h3>
+
+                <ul>
+                    <li>Conocer la personalidad de una persona.</li>
+                    <li>Entender cómo se relaciona con los demás.</li>
+                    <li>Prever momentos importantes en su vida.</li>
+                    <li>Descubrir talentos, desafíos y patrones emocionales.</li>
+                </ul>
+
+
+            </div>
+            <img src="../styles/images/cartaAstral.jpg" alt="cartaAstral" class="cartaAstral1_img">
+
+
+        </section>
+
+
+
+        <section class="section-container_CartaAstral3">
+
+            <div class="container-CartaAstral3_div">
+
+                <h2>Elementos principales de una carta astral</h2>
+
+                <ol class="container-CartaAstral3_ol">
+                    <li>Signo solar: Representa el ego y la esencia básica de la persona. Se basa en el día de
+                        nacimiento.</li>
+                    <li>Signo lunar: Representa el mundo emocional y cómo se gestionan los sentimientos.
+                    <li>Ascendente: Es el signo que estaba en el horizonte al momento de nacer. Influye en la forma
+                        en
+                        que la persona se muestra al mundo.</li>
+                    </li>
+                    <li>Casas astrológicas: Son 12 divisiones que representan diferentes áreas de la vida (amor,
+                        trabajo, salud, etc.).</li>
+                    <li>Planetas: Cada planeta representa una energía (Mercurio la comunicación, Venus el amor,
+                        Marte la
+                        acción, etc.).</li>
+                    <li>Aspectos: Son las relaciones angulares entre planetas. Pueden indicar armonía o tensión.
+
+                    </li>
+                </ol>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="section-container_CartaAstral4">
+            <div class="container-cartaastal4">
+                <h2>¿Cómo se interpreta?</h2>
+                <p>Un/a astrólogo/a analiza cómo se combinan todos estos elementos para dar una lectura personalizada.
+                    También se puede usar software para obtener una carta astral básica.</p>
+            </div>
+        </section>
+
+
+
+
     </main>
 
-    
+    <footer class="footer">
+        <ol class="footer_ol">
+            <img src="../styles/iconos/logoWhatsapp.png" alt="whatsApp" class="footer-li_img">
+            <li class="footer-ol_li">+541164638673</li>
+
+
+            <img src="../styles/iconos/correo.png" alt="email" class="footer-li_img">
+            <li class="footer-ol_li">clauisopi@hotmail.com</li>
+            <img src="../styles/iconos/logoInstagram.png" alt="instagram" class="footer-li_img">
+            <li class="footer-ol_li">@clauIsopi</li>
+        </ol>
+    </footer>
+
 </body>
+
 </html>
